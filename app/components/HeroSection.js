@@ -15,7 +15,7 @@ export function HeroSection({ content }) {
   const { hero, heroVisualCards } = content;
 
   return (
-    <section className="hero-section" aria-labelledby="hero-title">
+    <section id="vision" className="hero-section" aria-labelledby="hero-title">
       <div className="container hero-grid">
         <div className="hero-copy">
           <span className="access-badge">
@@ -27,10 +27,11 @@ export function HeroSection({ content }) {
             <LogoTomnap className="hero-logo" priority />
           </h1>
           <p className="hero-slogan" aria-label={hero.slogan.join(" ")}>
-            <span>{hero.slogan[0]}</span>
-            <span className="cyan-word">{hero.slogan[1]}</span>
+            <span>{hero.slogan[0]}</span>{" "}
+            <span className="cyan-word">{hero.slogan[1]}</span>{" "}
             <span>{hero.slogan[2]}</span>
           </p>
+          <p className="hero-positioning">{hero.positioning}</p>
           <p className="hero-lead">{hero.support}</p>
           <div className="hero-actions">
             <a className="button button-cyan" href="#access">
@@ -40,11 +41,13 @@ export function HeroSection({ content }) {
               {hero.secondaryCta}
             </a>
           </div>
-          <div className="hero-signals" aria-label="TOMNAP access notes">
-            {hero.signals.map((signal) => (
-              <span key={signal}>{signal}</span>
-            ))}
-          </div>
+          {hero.signals.length ? (
+            <div className="hero-signals" aria-label="TOMNAP access notes">
+              {hero.signals.map((signal) => (
+                <span key={signal}>{signal}</span>
+              ))}
+            </div>
+          ) : null}
         </div>
         <div className="commerce-visual" aria-label="Generic social moment to checkout flow">
           <div className="visual-line line-one" />

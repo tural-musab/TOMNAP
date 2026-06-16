@@ -172,6 +172,7 @@ export function EarlyAccessForm({ content, locale }) {
       <button className="button button-cyan form-button" type="submit" disabled={status === "submitting"}>
         {status === "submitting" ? form.submitting : form.submit}
       </button>
+      <p className="consent-note">{earlyAccess.consent}</p>
       <div className="form-status" aria-live="polite">
         {status === "success" ? <p className="success-message">{earlyAccess.success}</p> : null}
         {status === "error" ? <p className="error-message">{error}</p> : null}

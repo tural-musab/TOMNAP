@@ -11,6 +11,7 @@ const tomnapSlogan = ["See it.", "Tap it.", "Own it."];
 const englishRoles = [
   { value: "Seller", label: "Seller" },
   { value: "Creator", label: "Creator" },
+  { value: "Future Shopper", label: "Future Shopper" },
   { value: "Partner", label: "Partner" },
   { value: "Investor", label: "Investor" },
   { value: "Other", label: "Other" }
@@ -272,6 +273,7 @@ export const contentByLocale = {
   en: {
     navItems: [
       { label: "Vision", href: "#vision" },
+      { label: "Platform", href: "#platform" },
       { label: "Post2Cart", href: "#post2cart" },
       { label: "Access", href: "#access" },
       { label: "Contact", href: "#contact" }
@@ -281,11 +283,13 @@ export const contentByLocale = {
     hero: {
       brand: "TOMNAP",
       slogan: tomnapSlogan,
-      support: "We build commerce infrastructure for the next generation of social selling.",
+      positioning: "The commerce layer between social discovery and ownership.",
+      support:
+        "We build infrastructure for social selling, creator commerce, and future social shopping experiences.",
       badge: "Private access coming soon.",
       primaryCta: "Request Early Access",
       secondaryCta: "Explore Post2Cart",
-      signals: ["Global-first", "Selected merchants", "Availability may vary by market"]
+      signals: []
     },
     heroVisualCards: [
       {
@@ -343,24 +347,30 @@ export const contentByLocale = {
         body: "Turn every social sale into a visible order record."
       }
     ],
-    momentTitle: "From social moment to commerce",
-    moments: [
+    platformVision: {
+      label: "The TOMNAP platform vision",
+      title: "The TOMNAP platform vision",
+      copy:
+        "Social commerce is moving beyond stores and search. Products are discovered in posts, live streams, creator communities, and private social channels. TOMNAP is building the commerce layer behind those moments.",
+      cards: [
       {
         icon: "eye",
-        title: "See it.",
-        body: "Capture purchase intent from social posts, live streams, stories, and creator campaigns."
+        title: "For sellers",
+        body: "Tools to turn social traffic into paid, trackable orders."
       },
       {
         icon: "tap",
-        title: "Tap it.",
-        body: "Move buyers from content to checkout through fast, mobile-first flows."
+        title: "For creators",
+        body: "Transparent attribution and commerce infrastructure."
       },
       {
         icon: "own",
-        title: "Own it.",
-        body: "Track the order, payment status, and merchant operations after checkout."
+        title: "For shoppers",
+        body:
+          "A future social commerce experience to discover, tap, and own products from trusted social moments."
       }
-    ],
+      ]
+    },
     infrastructureTitle: "Built for social commerce infrastructure",
     features: [
       {
@@ -392,8 +402,11 @@ export const contentByLocale = {
     earlyAccess: {
       label: "Request Early Access",
       title: "Request Early Access",
-      subtitle: "Private access is opening for selected merchants, creators, and partners.",
+      subtitle:
+        "Private access is opening for selected sellers, creators, partners, investors, and future platform participants.",
       legal: "Checkout, payment, and delivery availability may vary by market.",
+      consent:
+        "By submitting, you agree that TOMNAP may review your request and contact selected applicants about private access.",
       success: "Thank you. We’ll review your request and contact selected applicants."
     },
     form: {
@@ -413,7 +426,7 @@ export const contentByLocale = {
         companyName: "Company or store",
         country: "Select country",
         socialProfileUrl: "https:// or @profile",
-        role: "Seller / Creator / Partner / Investor / Other",
+        role: "Seller / Creator / Future Shopper / Partner / Investor / Other",
         message: "Tell us what you want to build or sell..."
       },
       roles: englishRoles,
@@ -437,6 +450,7 @@ export const contentByLocale = {
   tr: {
     navItems: [
       { label: "Vizyon", href: "#vision" },
+      { label: "Platform", href: "#platform" },
       { label: "Post2Cart", href: "#post2cart" },
       { label: "Erişim", href: "#access" },
       { label: "İletişim", href: "#contact" }
@@ -446,11 +460,13 @@ export const contentByLocale = {
     hero: {
       brand: "TOMNAP",
       slogan: tomnapSlogan,
-      support: "Sosyal satışın yeni nesil ticaret altyapısını inşa ediyoruz.",
+      positioning: "Sosyal keşif ile sahiplik arasındaki ticaret katmanı.",
+      support:
+        "Sosyal satış, creator commerce ve gelecekteki sosyal alışveriş deneyimleri için altyapı inşa ediyoruz.",
       badge: "Özel erişim yakında.",
       primaryCta: "Erken Erişim Talep Et",
       secondaryCta: "Post2Cart’ı Keşfet",
-      signals: ["Global-first", "Seçili satıcılar", "Erişim pazara göre değişebilir"]
+      signals: []
     },
     heroVisualCards: [
       {
@@ -508,24 +524,30 @@ export const contentByLocale = {
         body: "Her sosyal satışı görünür bir sipariş kaydına dönüştürün."
       }
     ],
-    momentTitle: "Sosyal andan ticarete",
-    moments: [
+    platformVision: {
+      label: "TOMNAP platform vizyonu",
+      title: "TOMNAP platform vizyonu",
+      copy:
+        "Sosyal ticaret mağaza ve arama deneyimlerinin ötesine geçiyor. Ürünler postlarda, canlı yayınlarda, creator topluluklarında ve özel sosyal kanallarda keşfediliyor. TOMNAP bu anların arkasındaki ticaret katmanını inşa ediyor.",
+      cards: [
       {
         icon: "eye",
-        title: "See it.",
-        body: "Sosyal postlar, canlı yayınlar, story’ler ve creator kampanyalarından satın alma niyetini yakalayın."
+        title: "For sellers",
+        body: "Sosyal trafiği ödenmiş ve takip edilebilir siparişlere dönüştüren araçlar."
       },
       {
         icon: "tap",
-        title: "Tap it.",
-        body: "Alıcıları içerikten hızlı, mobil öncelikli checkout akışlarına taşıyın."
+        title: "For creators",
+        body: "Şeffaf atıf ve creator commerce altyapısı."
       },
       {
         icon: "own",
-        title: "Own it.",
-        body: "Checkout sonrasında siparişi, ödeme durumunu ve satıcı operasyonlarını takip edin."
+        title: "For shoppers",
+        body:
+          "Güvenilir sosyal anlardan ürünleri keşfetmeye, dokunmaya ve sahip olmaya yönelik gelecekteki sosyal ticaret deneyimi."
       }
-    ],
+      ]
+    },
     infrastructureTitle: "Sosyal ticaret altyapısı için tasarlandı",
     features: [
       {
@@ -557,8 +579,11 @@ export const contentByLocale = {
     earlyAccess: {
       label: "Erken Erişim",
       title: "Erken Erişim Talep Et",
-      subtitle: "Özel erişim seçili satıcılar, creator’lar ve partnerler için açılıyor.",
+      subtitle:
+        "Özel erişim seçili satıcılar, creator’lar, partnerler, yatırımcılar ve gelecekteki platform katılımcıları için açılıyor.",
       legal: "Checkout, ödeme ve teslimat özellikleri pazara göre değişebilir.",
+      consent:
+        "Göndererek TOMNAP’in talebinizi incelemesini ve seçilen başvuru sahipleriyle özel erişim hakkında iletişime geçmesini kabul edersiniz.",
       success: "Teşekkürler. Talebinizi inceleyip seçilen başvuru sahipleriyle iletişime geçeceğiz."
     },
     form: {
@@ -578,16 +603,10 @@ export const contentByLocale = {
         companyName: "Şirket veya mağaza",
         country: "Ülke seçin",
         socialProfileUrl: "https:// veya @profil",
-        role: "Satıcı / Creator / Partner / Yatırımcı / Diğer",
+        role: "Seller / Creator / Future Shopper / Partner / Investor / Other",
         message: "Ne inşa etmek veya satmak istediğinizi anlatın..."
       },
-      roles: [
-        { value: "Seller", label: "Satıcı" },
-        { value: "Creator", label: "Creator" },
-        { value: "Partner", label: "Partner" },
-        { value: "Investor", label: "Yatırımcı" },
-        { value: "Other", label: "Diğer" }
-      ],
+      roles: englishRoles,
       submitting: "Gönderiliyor...",
       submit: "Erişim Talep Et",
       errors: {
@@ -608,6 +627,7 @@ export const contentByLocale = {
   ru: {
     navItems: [
       { label: "Видение", href: "#vision" },
+      { label: "Платформа", href: "#platform" },
       { label: "Post2Cart", href: "#post2cart" },
       { label: "Доступ", href: "#access" },
       { label: "Контакты", href: "#contact" }
@@ -617,11 +637,13 @@ export const contentByLocale = {
     hero: {
       brand: "TOMNAP",
       slogan: tomnapSlogan,
-      support: "Мы создаём коммерческую инфраструктуру для нового поколения социальных продаж.",
+      positioning: "Коммерческий слой между социальным открытием и владением.",
+      support:
+        "Мы создаём инфраструктуру для социальных продаж, creator commerce и будущих социальных shopping-опытов.",
       badge: "Скоро откроется частный доступ.",
       primaryCta: "Запросить ранний доступ",
       secondaryCta: "Изучить Post2Cart",
-      signals: ["Global-first", "Отобранные продавцы", "Доступность зависит от рынка"]
+      signals: []
     },
     heroVisualCards: [
       {
@@ -679,24 +701,30 @@ export const contentByLocale = {
         body: "Превращайте каждую социальную продажу в видимую запись заказа."
       }
     ],
-    momentTitle: "От социального момента к коммерции",
-    moments: [
+    platformVision: {
+      label: "Видение платформы TOMNAP",
+      title: "Видение платформы TOMNAP",
+      copy:
+        "Social commerce выходит за пределы магазинов и поиска. Товары открывают в постах, live-трансляциях, creator-сообществах и частных социальных каналах. TOMNAP строит коммерческий слой за этими моментами.",
+      cards: [
       {
         icon: "eye",
-        title: "See it.",
-        body: "Фиксируйте покупательский интерес из социальных постов, live-трансляций, stories и creator-кампаний."
+        title: "For sellers",
+        body: "Инструменты для превращения социального трафика в оплаченные и отслеживаемые заказы."
       },
       {
         icon: "tap",
-        title: "Tap it.",
-        body: "Переводите покупателей из контента в быстрые mobile-first checkout-потоки."
+        title: "For creators",
+        body: "Прозрачная атрибуция и инфраструктура для creator commerce."
       },
       {
         icon: "own",
-        title: "Own it.",
-        body: "Отслеживайте заказ, статус оплаты и операции продавца после checkout."
+        title: "For shoppers",
+        body:
+          "Будущий social commerce опыт для открытия, выбора и владения продуктами из доверенных социальных моментов."
       }
-    ],
+      ]
+    },
     infrastructureTitle: "Создано для инфраструктуры social commerce",
     features: [
       {
@@ -728,8 +756,11 @@ export const contentByLocale = {
     earlyAccess: {
       label: "Ранний доступ",
       title: "Запросить ранний доступ",
-      subtitle: "Частный доступ открывается для отобранных продавцов, creator’ов и партнёров.",
+      subtitle:
+        "Частный доступ открывается для отобранных продавцов, creator’ов, партнёров, инвесторов и будущих участников платформы.",
       legal: "Доступность checkout, платежей и доставки может отличаться в зависимости от рынка.",
+      consent:
+        "Отправляя заявку, вы соглашаетесь, что TOMNAP может рассмотреть запрос и связаться с отобранными заявителями по поводу частного доступа.",
       success: "Спасибо. Мы рассмотрим заявку и свяжемся с отобранными заявителями."
     },
     form: {
@@ -749,16 +780,10 @@ export const contentByLocale = {
         companyName: "Компания или магазин",
         country: "Выберите страну",
         socialProfileUrl: "https:// или @profile",
-        role: "Продавец / Creator / Партнёр / Инвестор / Другое",
+        role: "Seller / Creator / Future Shopper / Partner / Investor / Other",
         message: "Расскажите, что хотите создать или продавать..."
       },
-      roles: [
-        { value: "Seller", label: "Продавец" },
-        { value: "Creator", label: "Creator" },
-        { value: "Partner", label: "Партнёр" },
-        { value: "Investor", label: "Инвестор" },
-        { value: "Other", label: "Другое" }
-      ],
+      roles: englishRoles,
       submitting: "Отправка...",
       submit: "Запросить доступ",
       errors: {

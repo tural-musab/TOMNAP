@@ -2,20 +2,35 @@ import "./globals.css";
 
 const title = "TOMNAP — See it. Tap it. Own it.";
 const description =
-  "TOMNAP builds commerce infrastructure for the next generation of social selling.";
+  "TOMNAP is the commerce layer between social discovery and ownership, building infrastructure for social selling, creator commerce, and future social shopping experiences.";
 
 export const metadata = {
   metadataBase: new URL("https://tomnap.com"),
+  applicationName: "TOMNAP",
   title,
   description,
+  keywords: [
+    "TOMNAP",
+    "social commerce infrastructure",
+    "creator commerce",
+    "social selling",
+    "Post2Cart"
+  ],
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: {
+      en: "/",
+      tr: "/tr",
+      ru: "/ru"
+    }
   },
   openGraph: {
     title,
     description,
     url: "/",
     siteName: "TOMNAP",
+    locale: "en_US",
+    alternateLocale: ["tr_TR", "ru_RU"],
     images: [
       {
         url: "/brand/tomnap-og.png",
@@ -25,6 +40,10 @@ export const metadata = {
       }
     ],
     type: "website"
+  },
+  robots: {
+    index: true,
+    follow: true
   },
   twitter: {
     card: "summary_large_image",

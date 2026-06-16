@@ -4,7 +4,7 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { HeroSection } from "./HeroSection";
 import { InfrastructureSection } from "./InfrastructureSection";
-import { MomentSection } from "./MomentSection";
+import { PlatformVisionSection } from "./PlatformVisionSection";
 import { Post2CartSection } from "./Post2CartSection";
 
 export function LandingPage({ locale }) {
@@ -15,8 +15,8 @@ export function LandingPage({ locale }) {
       <Header content={content} locale={locale} />
       <main>
         <HeroSection content={content} />
+        <PlatformVisionSection content={content} />
         <Post2CartSection content={content} />
-        <MomentSection content={content} />
         <InfrastructureSection content={content} />
         <EarlyAccessSection content={content} locale={locale} />
       </main>

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const allowedRoles = new Set(["Seller", "Creator", "Partner", "Investor", "Other"]);
+const allowedRoles = new Set(["Seller", "Creator", "Future Shopper", "Partner", "Investor", "Other"]);
 
 function text(value, maxLength = 500) {
   if (typeof value !== "string") return "";
@@ -86,6 +86,17 @@ export async function POST(request) {
     return NextResponse.json({ ok: true, stored: true });
   }
 
-  console.info("Early access lead received without Supabase configuration", safeLeadSummary(payload));
-  return NextResponse.json({ ok: true, stored: false });
+  if (process.env.NODE_ENV === "production") {
+    console.error("Early access Supabase configuration is missing in production", safeLeadSummary(payload));
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Unable to save request right now. Please contact hello@tomnap.com."
+      },
+      { status: 503 }
+    );
+  }
+
+  console.info("Early access lead received in development without Supabase configuration", safeLeadSummary(payload));
+  return NextResponse.json({ ok: true, stored: false, developmentFallback: true });
 }

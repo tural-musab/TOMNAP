@@ -1395,3 +1395,461 @@ textarea:focus-visible {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* TOMNAP parent-brand homepage refinements */
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(0, 212, 255, 0.08), transparent 28rem),
+    linear-gradient(180deg, #07111f 0%, #050b14 62%, #050b14 100%);
+  color: #edf7ff;
+}
+
+.site-header {
+  border-bottom: 1px solid rgba(145, 180, 210, 0.18);
+  background: rgba(5, 12, 22, 0.78);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.18);
+}
+
+.nav-shell {
+  min-height: 74px;
+}
+
+.button-light {
+  background: #edf7ff;
+  color: #06101e;
+  box-shadow: none;
+}
+
+.button-light:hover {
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.16);
+}
+
+.button-cyan {
+  background: linear-gradient(135deg, #16d8f5, #2378f4);
+  box-shadow: 0 16px 38px rgba(0, 144, 255, 0.18);
+}
+
+.button-cyan:hover {
+  box-shadow: 0 18px 44px rgba(0, 144, 255, 0.26);
+}
+
+.button-ghost {
+  color: #e9f5ff;
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(169, 197, 220, 0.24);
+}
+
+.hero-section {
+  min-height: 720px;
+  padding: 84px 0 78px;
+  background:
+    radial-gradient(circle at 68% 36%, rgba(0, 212, 255, 0.16), transparent 26rem),
+    radial-gradient(circle at 18% 18%, rgba(35, 120, 244, 0.12), transparent 24rem),
+    linear-gradient(180deg, #07111f 0%, #07111f 48%, #081626 100%);
+}
+
+.hero-section::before {
+  opacity: 0.42;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 0.98fr) minmax(500px, 1.02fr);
+  gap: 64px;
+}
+
+.access-badge {
+  border-color: rgba(0, 212, 255, 0.28);
+  color: #baf4ff;
+  background: rgba(0, 212, 255, 0.075);
+}
+
+.hero-logo {
+  width: min(390px, 82vw);
+}
+
+.hero-slogan {
+  display: block;
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: clamp(42px, 4.5vw, 64px);
+  line-height: 1.02;
+}
+
+.hero-slogan span {
+  display: inline;
+}
+
+.hero-slogan span:last-child {
+  white-space: nowrap;
+}
+
+.hero-positioning {
+  max-width: 640px;
+  margin: 0 0 16px;
+  color: #d9ecfb;
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 760;
+  line-height: 1.18;
+}
+
+.hero-lead {
+  max-width: 620px;
+  color: #9fb5c9;
+  font-size: 18px;
+  line-height: 1.58;
+}
+
+.commerce-visual {
+  min-height: 480px;
+  border-radius: 26px;
+  border-color: rgba(169, 197, 220, 0.18);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018));
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.24);
+}
+
+.commerce-visual::before {
+  background: radial-gradient(circle at 50% 44%, rgba(0, 212, 255, 0.17), transparent 34%);
+}
+
+.tap-ring {
+  width: 230px;
+  height: 230px;
+  box-shadow:
+    0 0 0 38px rgba(0, 212, 255, 0.026),
+    0 0 0 78px rgba(0, 212, 255, 0.016),
+    0 0 58px rgba(0, 212, 255, 0.24);
+}
+
+.hero-visual-card {
+  border-color: rgba(169, 197, 220, 0.2);
+  background: rgba(7, 18, 31, 0.82);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.24);
+}
+
+.section {
+  border-top: 1px solid rgba(169, 197, 220, 0.12);
+  background: #07111f;
+}
+
+.section-heading h2,
+.platform-copy h2,
+.product-copy h3,
+.access-copy h2 {
+  color: #f4f9ff;
+}
+
+.section-label {
+  color: #25dcf4;
+  letter-spacing: 0.08em;
+}
+
+.platform-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #081626 0%, #07111f 100%);
+}
+
+.platform-shell {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr);
+  gap: 52px;
+  align-items: start;
+}
+
+.platform-copy h2 {
+  max-width: 610px;
+  margin: 0 0 20px;
+  font-size: clamp(34px, 4vw, 58px);
+  font-weight: 900;
+  line-height: 1.04;
+}
+
+.platform-copy > p:not(.section-label) {
+  max-width: 650px;
+  margin: 0;
+  color: #9fb5c9;
+  font-size: 18px;
+  line-height: 1.58;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.platform-card,
+.flow-step,
+.feature-card {
+  border-color: rgba(169, 197, 220, 0.17);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: none;
+}
+
+.platform-card {
+  min-height: 270px;
+  border: 1px solid rgba(169, 197, 220, 0.17);
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.platform-card .icon-tile {
+  margin-bottom: 48px;
+}
+
+.platform-card h3 {
+  margin: 0 0 10px;
+  color: #f4f9ff;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.platform-card p {
+  margin: 0;
+  color: #9fb5c9;
+  font-size: 15px;
+  line-height: 1.52;
+}
+
+.icon-tile,
+.feature-icon {
+  color: #06101e;
+  background: #25dcf4;
+}
+
+.product-section {
+  margin-top: 0;
+  padding-top: 96px;
+  background: #07111f;
+}
+
+.product-card {
+  border-color: rgba(169, 197, 220, 0.17);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 18% 26%, rgba(255, 106, 0, 0.08), transparent 18rem),
+    rgba(255, 255, 255, 0.035);
+  box-shadow: none;
+}
+
+.post2cart-live-wordmark {
+  display: block;
+  color: #f6f9ff;
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.post2cart-live-wordmark span {
+  display: inline;
+  color: #ff6a00;
+  font: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.post2cart-wordmark-stack > span:not(.post2cart-live-wordmark) {
+  color: #b9c8d6;
+}
+
+.product-copy p:not(.section-label),
+.flow-step p {
+  color: #9fb5c9;
+}
+
+.flow-number {
+  color: #06101e;
+  background: #25dcf4;
+}
+
+.flow-step h3,
+.feature-card h3 {
+  color: #f4f9ff;
+}
+
+.infrastructure-section {
+  background:
+    linear-gradient(180deg, #07111f 0%, #081626 100%);
+}
+
+.feature-card::after {
+  display: none;
+}
+
+.feature-card p {
+  color: #9fb5c9;
+}
+
+.access-section {
+  background:
+    radial-gradient(circle at 82% 14%, rgba(0, 212, 255, 0.11), transparent 24rem),
+    linear-gradient(180deg, #081626 0%, #050b14 100%);
+}
+
+.access-copy p:not(.section-label),
+.access-copy .legal-copy {
+  color: #9fb5c9;
+}
+
+.access-form {
+  border-color: rgba(169, 197, 220, 0.2);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: none;
+}
+
+.field label {
+  color: #a9bed0;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border-color: rgba(169, 197, 220, 0.22);
+  color: #edf7ff;
+  background-color: rgba(5, 12, 22, 0.76);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #8298ad;
+}
+
+.field select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #9fb5c9 50%),
+    linear-gradient(135deg, #9fb5c9 50%, transparent 50%);
+}
+
+.field select:invalid {
+  color: #8298ad;
+}
+
+.consent-note {
+  margin: 14px 0 0;
+  color: #8fa8bc;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.success-message {
+  color: #8fffe6;
+}
+
+.error-message {
+  color: #ffb4a8;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(169, 197, 220, 0.12);
+}
+
+@media (max-width: 1160px) {
+  .hero-grid,
+  .platform-shell,
+  .product-card,
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 54px 0 58px;
+  }
+
+  .hero-slogan {
+    font-size: clamp(41px, 11.5vw, 58px);
+  }
+
+  .hero-positioning {
+    font-size: 22px;
+  }
+
+  .hero-lead {
+    font-size: 16px;
+  }
+
+  .commerce-visual {
+    min-height: 96px;
+  }
+
+  .tap-ring {
+    top: 48px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .tap-ring::before {
+    inset: 14px;
+    border-width: 7px;
+  }
+
+  .tap-ring::after {
+    inset: 38px;
+  }
+
+  .section,
+  .product-section {
+    padding: 56px 0;
+  }
+
+  .platform-section {
+    padding-top: 18px;
+  }
+
+  .platform-shell,
+  .access-grid {
+    gap: 30px;
+  }
+
+  .platform-copy h2 {
+    font-size: 31px;
+  }
+
+  .platform-copy > p:not(.section-label) {
+    font-size: 15px;
+  }
+
+  .platform-card {
+    padding: 22px;
+  }
+
+  .platform-card .icon-tile {
+    margin-bottom: 24px;
+  }
+
+  .product-card {
+    padding: 24px;
+  }
+
+  .post2cart-live-wordmark {
+    font-size: 36px;
+  }
+
+  .access-form {
+    border: 1px solid rgba(169, 197, 220, 0.2);
+    border-radius: 22px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+}

@@ -25,7 +25,9 @@ export function LogoPost2CartLockup({ byline = "by TOMNAP" }) {
     <div className="post2cart-lockup" aria-label="Post2Cart by TOMNAP">
       <img className="post2cart-symbol" src="/brand/post2cart-icon.svg" alt="" aria-hidden="true" loading="lazy" />
       <div className="post2cart-wordmark-stack">
-        <img className="post2cart-wordmark" src="/brand/post2cart-wordmark.svg" alt="Post2Cart" loading="lazy" />
+        <span className="post2cart-live-wordmark" aria-hidden="true">
+          Post<span>2</span>Cart
+        </span>
         <span>{byline}</span>
       </div>
     </div>
