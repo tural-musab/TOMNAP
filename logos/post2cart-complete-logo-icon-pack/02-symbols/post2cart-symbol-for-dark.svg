@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Post2Cart symbol">
+  <defs>
+    <linearGradient id="p2cOrange" x1="28" y1="24" x2="228" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8A00"/>
+      <stop offset="0.52" stop-color="#FF6A00"/>
+      <stop offset="1" stop-color="#FF3D00"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="24" width="200" height="146" rx="30" fill="url(#p2cOrange)"/>
+  <rect x="58" y="69" width="46" height="13" rx="6.5" fill="#FFFFFF"/>
+  <rect x="58" y="94" width="46" height="13" rx="6.5" fill="#FFFFFF"/>
+  <path d="M60 170C85 148 131 142 205 145V184C174 183 142 183 108 184C82 184 67 180 60 170Z" fill="#FFFFFF"/>
+  <path d="M120 67C143 42 190 40 187 76C184 107 138 119 101 139C74 154 54 174 48 217" fill="none" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="217" r="19" fill="#FFFFFF"/>
+  <circle cx="168" cy="217" r="19" fill="#FFFFFF"/>
+</svg>

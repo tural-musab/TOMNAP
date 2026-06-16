@@ -1,0 +1,10 @@
+:root {
+  --post2cart-orange: #FF6A00;
+  --post2cart-orange-dark: #FF3D00;
+  --post2cart-orange-light: #FF8A00;
+  --post2cart-navy: #0D1321;
+  --post2cart-slate: #2B2F3A;
+  --post2cart-light: #F2F4F7;
+  --post2cart-white: #FFFFFF;
+  --post2cart-gradient-orange: linear-gradient(135deg, #FF8A00 0%, #FF6A00 52%, #FF3D00 100%);
+}

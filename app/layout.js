@@ -1,0 +1,60 @@
+import "./globals.css";
+
+const title = "TOMNAP — See it. Tap it. Own it.";
+const description =
+  "TOMNAP builds commerce infrastructure for the next generation of social selling.";
+
+export const metadata = {
+  metadataBase: new URL("https://tomnap.com"),
+  title,
+  description,
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "TOMNAP",
+    images: [
+      {
+        url: "/brand/tomnap-og.png",
+        width: 1200,
+        height: 630,
+        alt: "TOMNAP"
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/brand/tomnap-og.png"]
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/symbols/tomnap-symbol-primary.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#00D4FF" }]
+  },
+  manifest: "/site.webmanifest"
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0B1320"
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}

@@ -1,0 +1,21 @@
+:root {
+  --tomnap-navy: #0B1320;
+  --tomnap-cyan: #00D4FF;
+  --tomnap-teal: #14E0CB;
+  --tomnap-blue: #0055FF;
+  --tomnap-orange: #FF6A00;
+  --tomnap-surface: #F2F4F7;
+  --tomnap-white: #FFFFFF;
+}
+
+.tomnap-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.tomnap-symbol {
+  height: 32px;
+  width: auto;
+  display: block;
+}
